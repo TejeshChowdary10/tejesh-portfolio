@@ -25,20 +25,45 @@ const EXPERIENCE = [
     role: "AWS Cloud Intern",
     company: "F13 Technologies",
     period: "July 2026 – Present",
-    bullets: [
-      "Completed six AWS Partner learning programs covering cloud migration, economics, Generative AI, Agentic AI, and Data Science.",
-      "Employee Document Vault: Serverless document management using S3, Lambda, DynamoDB, Cognito, API Gateway, KMS with RBAC, versioning, and audit logging.",
-      "Smart Leave Management: Serverless leave system using Lambda, DynamoDB, Step Functions, API Gateway, Cognito, SNS, SES, and EventBridge.",
+    type: "Full-time Internship",
+    location: "Remote",
+    current: true,
+    summary: "Building serverless, production-grade cloud architectures and applying AI in real-world environments.",
+    highlights: [
+      {
+        label: "Employee Document Vault",
+        desc: "Serverless document management with RBAC, versioning & audit logging using S3, Lambda, DynamoDB, Cognito, API Gateway, and KMS.",
+      },
+      {
+        label: "Smart Leave Management",
+        desc: "End-to-end serverless leave system with multi-step workflows, notifications, and scheduling via Lambda, Step Functions, SNS, SES, and EventBridge.",
+      },
+      {
+        label: "AWS Partner Training",
+        desc: "Completed 6 official AWS Partner programs: Cloud Migration, Cloud Economics, Generative AI, Agentic AI, and Data Science.",
+      },
     ],
+    tech: ["AWS Lambda", "S3", "DynamoDB", "Step Functions", "API Gateway", "Cognito", "SNS", "SES", "EventBridge", "KMS"],
   },
   {
     role: "Data Analyst Intern",
     company: "SkilFied Mentor",
     period: "June 2026 – July 2026",
-    bullets: [
-      "Developed SQL queries and automated data analysis workflows for business reporting.",
-      "Cleaned and transformed datasets using Python to improve reporting accuracy.",
+    type: "Internship",
+    location: "Remote",
+    current: false,
+    summary: "Applied data analysis and automation to improve business reporting pipelines.",
+    highlights: [
+      {
+        label: "Automated Reporting",
+        desc: "Developed SQL queries and Python workflows to automate data analysis, reducing manual reporting time significantly.",
+      },
+      {
+        label: "Data Transformation",
+        desc: "Cleaned and transformed multi-source datasets to improve accuracy and reliability of business reports.",
+      },
     ],
+    tech: ["Python", "SQL", "MySQL", "Pandas", "Excel"],
   },
 ];
 
@@ -47,6 +72,7 @@ const PROJECTS = [
     title: "ML Techniques on Big Data for MQTT IoT Security",
     tags: ["Python", "PySpark", "Big Data", "ML"],
     period: "Sep 2025 – Mar 2026",
+    github: "https://github.com/TejeshChowdary10/mqtt-iot-intrusion-detection",
     bullets: [
       "Built a scalable ML pipeline for analyzing large-scale MQTT IoT network traffic on a big data framework.",
       "Performed distributed data preprocessing, feature engineering, and model optimization for efficient intrusion detection.",
@@ -56,6 +82,7 @@ const PROJECTS = [
     title: "Brain Tumor Segmentation via Federated Learning",
     tags: ["Python", "Federated Learning", "Attention U-Net"],
     period: "Jan 2025 – Jun 2025",
+    github: "https://github.com/TejeshChowdary10/brain-tumor-federated-learning",
     bullets: [
       "Implemented Attention U-Net with FedAvg and FedAdagrad for privacy-preserving medical image segmentation.",
       "Achieved 0.882 Dice score under high data skew, validating model robustness in non-IID settings.",
@@ -65,35 +92,173 @@ const PROJECTS = [
     title: "Union Budget 2024 Sentiment Analysis",
     tags: ["Python", "NLP", "Sentiment Analysis", "STM"],
     period: "Jul 2024 – Jan 2025",
+    github: "https://github.com/TejeshChowdary10/sentiment-analysis-union-budget-2024",
     bullets: [
       "Collected and analyzed 1,700+ social media comments using NLP, STM, and sentiment classification.",
       "Built ensemble ML models (SVM, XGBoost, RF) to classify public opinion with >74% accuracy.",
+    ],
+  },
+  {
+    title: "Decoding Algorithmic Diversity using CodeT5+ & Clustering",
+    tags: ["Python", "CodeT5+", "Clustering", "NLP"],
+    period: "Nov 2024 – Mar 2025",
+    github: "https://github.com/TejeshChowdary10/codet5-algorithmic-diversity",
+    bullets: [
+      "Fine-tuned CodeT5+ transformer to generate embeddings for code across multiple programming languages.",
+      "Applied K-Means and hierarchical clustering to identify algorithmic patterns; published at CONIT 2025.",
+    ],
+  },
+  {
+    title: "Hybrid Encryption & Baudot Code Security System",
+    tags: ["Python", "Cryptography", "Trie", "Chaotic Maps"],
+    period: "Jun 2024 – Oct 2024",
+    github: "https://github.com/TejeshChowdary10/hybrid-encryption-baudot-chaotic",
+    bullets: [
+      "Designed a hybrid encryption scheme combining chaotic maps with Baudot codes for secure communication.",
+      "Integrated Trie-based spell checker for paragraph validation; published at ASIANCON 2024.",
+    ],
+  },
+  {
+    title: "Drone Delivery Path Planning & Collision Avoidance",
+    tags: ["Python", "Graph Algorithms", "Optimization", "Simulation"],
+    period: "Aug 2024 – Jan 2025",
+    github: "https://github.com/TejeshChowdary10/drone-delivery-path-planning",
+    bullets: [
+      "Developed an algorithmic framework for multi-drone route optimization with real-time collision detection.",
+      "Applied A*, Dijkstra, and dynamic obstacle avoidance algorithms; published at ICICACS 2025.",
     ],
   },
 ];
 
 const SKILLS = {
   Languages: ["Python", "SQL", "Java", "C"],
-  "Data Science & ML": ["Machine Learning", "NLP", "Sentiment Analysis", "Feature Engineering"],
-  "Technologies": ["MySQL", "Eclipse", "pgAdmin 4", "Jupyter Notebook", "Tableau", "Excel"],
-  "Cloud & Tools": ["AWS Lambda", "DynamoDB", "S3", "API Gateway", "Cognito", "PySpark"],
+  "Data Science & ML": ["Machine Learning", "Deep Learning", "NLP", "Federated Learning", "Sentiment Analysis", "Feature Engineering"],
+  "Technologies": ["MySQL", "PySpark", "Jupyter Notebook", "Tableau", "pgAdmin 4", "Eclipse"],
+  "Cloud & Tools": ["AWS Lambda", "DynamoDB", "S3", "API Gateway", "Step Functions", "Cognito"],
+  "Frameworks & Libraries": ["PyTorch", "Scikit-learn", "XGBoost", "Pandas", "NumPy", "Matplotlib"],
 };
 
 const CERTIFICATIONS = [
-  { name: "Data Analytics Essentials", issuer: "Cisco Networking Academy", date: "Mar 2026", url: "https://credly.com" },
-  { name: "AWS Academy Cloud Foundations", issuer: "Amazon Web Services", date: "Aug 2025", url: "https://credly.com" },
-  { name: "Machine Learning with Python", issuer: "IBM via Coursera", date: "Dec 2024", url: "https://coursera.org" },
-  { name: "The Complete SQL Bootcamp", issuer: "Udemy", date: "Oct 2024", url: "https://udemy.com" },
+  {
+    name: "AWS Partner: Generative AI Technical",
+    issuer: "Amazon Web Services",
+    date: "Aug 2026",
+    url: "https://www.credly.com/badges/eba8f956-36c8-4407-9e0b-ba3f77974953/linked_in_profile",
+  },
+  {
+    name: "AWS Partner: Agentic AI Essentials",
+    issuer: "Amazon Web Services",
+    date: "Aug 2026",
+    url: "https://www.credly.com/badges/f965a8ad-7647-4fa3-981d-75f4c18d00e8/linked_in_profile",
+  },
+  {
+    name: "AWS Partner: Cloud Economics Essentials",
+    issuer: "Amazon Web Services",
+    date: "Aug 2026",
+    url: "https://www.credly.com/badges/c9d0d2c9-3a2f-4a31-b698-bde9bfc587fe/linked_in_profile",
+  },
+  {
+    name: "AWS Partner: Technical Accredited",
+    issuer: "Amazon Web Services",
+    date: "Jul 2026",
+    url: "https://www.credly.com/badges/c996832e-62ad-4ac9-b11c-aa22b1d9a9d6/public_url",
+  },
+  {
+    name: "Data Analytics Essentials",
+    issuer: "Cisco Networking Academy",
+    date: "Mar 2026",
+    url: "https://www.credly.com/badges/d1846c61-2c4b-45ba-9ed2-108c50dd0969/public_url",
+  },
+  {
+    name: "AWS Academy Graduate: Cloud Foundations",
+    issuer: "Amazon Web Services",
+    date: "Aug 2025",
+    url: "https://www.credly.com/badges/8968c45c-4da1-4363-9523-1a7eb7bdbd80/print",
+  },
+  {
+    name: "Machine Learning with Python",
+    issuer: "IBM · Coursera",
+    date: "Dec 2024",
+    url: "https://www.coursera.org/account/accomplishments/verify/D88GAN1UZITG",
+  },
+  {
+    name: "The Complete SQL Bootcamp",
+    issuer: "Udemy",
+    date: "Oct 2024",
+    url: "https://www.udemy.com/certificate/UC-57f3086b-8148-4db4-9b8d-041710dcc329/",
+  },
 ];
 
 const PUBLICATIONS = [
   {
-    title: "Adaptive Biometric Smart Door Lock System with Time-Bound Access Using GSM Module",
-    venue: "ICIRCA 2025",
+    title: "An Efficient Spell Checker System for Paragraphs and Baudot Codes Using Tries",
+    venue: "ASIANCON 2024",
+    fullVenue: "4th Asian Conference on Innovation in Technology",
+    doi: "10.1109/ASIANCON62057.2024.10838175",
+    url: "https://doi.org/10.1109/ASIANCON62057.2024.10838175",
+    year: "2024",
+    citations: 1,
+    area: "Algorithms & Data Structures",
+  },
+  {
+    title: "Optimizing Drone Delivery Management: An Algorithmic Framework for Collision Detection and Avoidance with Resource Management",
+    venue: "ICICACS 2025",
+    fullVenue: "3rd International Conference on Integrated Circuits and Communication Systems",
+    doi: "10.1109/ICICACS65178.2025.10968590",
+    url: "https://doi.org/10.1109/ICICACS65178.2025.10968590",
+    year: "2025",
+    citations: 1,
+    area: "Optimization & Algorithms",
   },
   {
     title: "Decoding Algorithmic Diversity Across Programming Languages using CodeT5+ with Clustering Analysis",
     venue: "CONIT 2025",
+    fullVenue: "5th International Conference on Intelligent Technologies",
+    doi: "10.1109/CONIT65521.2025.11167866",
+    url: "https://doi.org/10.1109/CONIT65521.2025.11167866",
+    year: "2025",
+    citations: 0,
+    area: "NLP & Code AI",
+  },
+  {
+    title: "Adaptive Biometric Smart Door Lock System with Time-Bound Access Using GSM Module",
+    venue: "ICIRCA 2025",
+    fullVenue: "6th International Conference on Inventive Research in Computing Applications",
+    doi: "10.1109/ICIRCA65828.2025.11064267",
+    url: "https://doi.org/10.1109/ICIRCA65828.2025.11064267",
+    year: "2025",
+    citations: 2,
+    area: "IoT & Security",
+  },
+  {
+    title: "Integrating Baudot Encoding and Chaotic Maps with Symmetric Cryptography",
+    venue: "ICECA 2025",
+    fullVenue: "9th International Conference on Electronics, Communication and Aerospace Technology",
+    doi: "",
+    url: "https://ieeexplore.ieee.org/author/654951346485441",
+    year: "2025",
+    citations: 0,
+    area: "Cryptography & Security",
+  },
+  {
+    title: "Comparative Study of Encryption Algorithms in Client-Server Communication Using Baudot Encoding",
+    venue: "ICE2CPT 2025",
+    fullVenue: "International Conference on Electrical, Electronics and Computer Science with Advanced Power Technologies",
+    doi: "",
+    url: "https://ieeexplore.ieee.org/author/654951346485441",
+    year: "2025",
+    citations: 0,
+    area: "Network Security",
+  },
+  {
+    title: "Evaluating Machine Learning Techniques on Big Data Frameworks for MQTT IoT Security",
+    venue: "I3CTCON 2026",
+    fullVenue: "IEEE International Conference for Convergence in Computing Technology",
+    doi: "",
+    url: "https://ieeexplore.ieee.org/author/654951346485441",
+    year: "2026",
+    citations: 0,
+    area: "ML & Big Data",
   },
 ];
 
@@ -130,7 +295,7 @@ export default function Home() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navLinks = ["About", "Experience", "Projects", "Skills", "Contact"];
+  const navLinks = ["About", "Experience", "Projects", "Skills", "Certifications", "Publications", "Contact"];
 
   const scrollTo = (id: string) => {
     document.getElementById(id.toLowerCase())?.scrollIntoView({ behavior: "smooth" });
@@ -296,9 +461,9 @@ export default function Home() {
           <div className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-white/8 pt-10">
             {[
               { label: "Focus", value: "ML & Deep Learning" },
-              { label: "Projects", value: "3 Research Projects" },
-              { label: "Certifications", value: "4 Credentials" },
-              { label: "Publications", value: "2 Conference Papers" },
+              { label: "Projects", value: "6 Research Projects" },
+              { label: "Certifications", value: "8 Credentials" },
+              { label: "Publications", value: "7 IEEE Papers" },
             ].map((s) => (
               <div key={s.label}>
                 <p className="text-[10px] uppercase tracking-[0.3em] text-white/25">{s.label}</p>
@@ -389,7 +554,7 @@ export default function Home() {
       <section id="experience" className="relative border-t border-white/8 px-6 py-28 md:py-36">
         <div className="max-w-7xl mx-auto">
           <Reveal>
-            <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
+            <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-20">
               <div>
                 <Label>Work Experience</Label>
                 <h2 className="mt-5 text-4xl md:text-6xl font-bold tracking-[-0.055em] leading-[0.92]">
@@ -397,34 +562,108 @@ export default function Home() {
                   <span className="text-white/28">worked.</span>
                 </h2>
               </div>
+              <p className="text-sm text-white/35 max-w-xs leading-relaxed md:text-right">
+                Building real-world systems at the intersection of cloud, data, and AI.
+              </p>
             </div>
           </Reveal>
 
-          <div className="space-y-1">
-            {EXPERIENCE.map((exp, i) => (
-              <Reveal key={i} delay={i * 100}>
-                <div className="group border border-white/8 rounded-2xl p-7 md:p-9 hover:border-white/18 hover:bg-white/[0.02] transition-all duration-500">
-                  <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
-                    <div>
-                      <h3 className="text-xl md:text-2xl font-semibold tracking-tight">{exp.role}</h3>
-                      <p className="mt-1.5 text-white/50 font-medium">{exp.company}</p>
+          <div className="relative">
+            {/* Vertical timeline line */}
+            <div className="absolute left-[19px] md:left-[23px] top-2 bottom-2 w-px bg-gradient-to-b from-white/20 via-white/8 to-transparent hidden md:block" />
+
+            <div className="space-y-10">
+              {EXPERIENCE.map((exp, i) => (
+                <Reveal key={i} delay={i * 120}>
+                  <div className="md:pl-16 relative">
+                    {/* Timeline dot */}
+                    <div className="absolute left-0 top-7 hidden md:flex items-center justify-center">
+                      <div className={`w-[46px] h-[46px] rounded-full border flex items-center justify-center transition-all duration-500 ${exp.current ? "border-emerald-400/40 bg-emerald-400/[0.06]" : "border-white/12 bg-white/[0.03]"}`}>
+                        {exp.current ? (
+                          <span className="relative flex h-2 w-2">
+                            <span className="absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-70 animate-ping" />
+                            <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
+                          </span>
+                        ) : (
+                          <span className="w-2 h-2 rounded-full bg-white/30" />
+                        )}
+                      </div>
                     </div>
-                    <span className="inline-flex items-center self-start gap-2 text-xs text-white/35 border border-white/10 rounded-full px-4 py-1.5 font-mono whitespace-nowrap">
-                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-400/70 flex-shrink-0" />
-                      {exp.period}
-                    </span>
+
+                    {/* Card */}
+                    <div className="group relative border border-white/8 rounded-2xl overflow-hidden hover:border-white/16 transition-all duration-500">
+                      {/* Subtle top gradient accent */}
+                      <div className={`absolute top-0 left-0 right-0 h-px ${exp.current ? "bg-gradient-to-r from-transparent via-emerald-400/40 to-transparent" : "bg-gradient-to-r from-transparent via-white/10 to-transparent"}`} />
+
+                      {/* Header */}
+                      <div className="p-7 md:p-9 pb-0">
+                        <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
+                          <div className="flex-1">
+                            <div className="flex items-center gap-3 flex-wrap mb-1">
+                              {exp.current && (
+                                <span className="text-[10px] font-semibold uppercase tracking-widest text-emerald-400 bg-emerald-400/10 border border-emerald-400/20 rounded-full px-2.5 py-0.5">
+                                  Current
+                                </span>
+                              )}
+                              <span className="text-[10px] uppercase tracking-widest text-white/25 font-medium">{exp.type}</span>
+                            </div>
+                            <h3 className="text-xl md:text-2xl font-bold tracking-tight text-white">{exp.role}</h3>
+                            <div className="flex items-center gap-2 mt-1.5 flex-wrap">
+                              <span className="text-white/55 font-semibold text-sm">{exp.company}</span>
+                              <span className="text-white/20">·</span>
+                              <span className="text-white/35 text-sm">{exp.location}</span>
+                            </div>
+                          </div>
+                          <span className="inline-flex items-center self-start gap-2 text-xs text-white/35 border border-white/10 rounded-full px-4 py-2 font-mono whitespace-nowrap bg-white/[0.02] flex-shrink-0">
+                            <span className={`w-1.5 h-1.5 rounded-full flex-shrink-0 ${exp.current ? "bg-emerald-400" : "bg-white/30"}`} />
+                            {exp.period}
+                          </span>
+                        </div>
+
+                        <p className="mt-5 text-sm md:text-[15px] leading-6 text-white/45 max-w-2xl">{exp.summary}</p>
+                      </div>
+
+                      {/* Highlights */}
+                      <div className="px-7 md:px-9 mt-7 grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                        {exp.highlights.map((h: {label: string; desc: string}, j: number) => (
+                          <div
+                            key={j}
+                            className="group/card rounded-xl border border-white/6 bg-white/[0.02] p-4 hover:border-white/14 hover:bg-white/[0.04] transition-all duration-300"
+                          >
+                            <div className="flex items-start gap-2.5">
+                              <div className="mt-0.5 w-5 h-5 rounded-md bg-white/8 flex items-center justify-center flex-shrink-0">
+                                <span className="text-white/50 text-[10px]">▸</span>
+                              </div>
+                              <div>
+                                <p className="text-xs font-semibold text-white/75 mb-1">{h.label}</p>
+                                <p className="text-[12px] leading-[1.65] text-white/38">{h.desc}</p>
+                              </div>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+
+                      {/* Tech stack footer */}
+                      <div className="px-7 md:px-9 pt-5 pb-7 md:pb-9 mt-2">
+                        <div className="flex items-center gap-3 flex-wrap">
+                          <span className="text-[10px] uppercase tracking-[0.25em] text-white/20 font-medium flex-shrink-0">Stack</span>
+                          <div className="flex flex-wrap gap-1.5">
+                            {exp.tech.map((t: string) => (
+                              <span
+                                key={t}
+                                className="text-[11px] px-2.5 py-1 rounded-lg bg-white/[0.04] border border-white/8 text-white/45 font-medium"
+                              >
+                                {t}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <ul className="space-y-3">
-                    {exp.bullets.map((b, j) => (
-                      <li key={j} className="flex gap-3 text-sm md:text-[15px] leading-6 text-white/50">
-                        <span className="mt-2 w-1 h-1 rounded-full bg-white/30 flex-shrink-0" />
-                        {b}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </Reveal>
-            ))}
+                </Reveal>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -457,9 +696,23 @@ export default function Home() {
                           {p.title}
                         </h3>
                       </div>
-                      <span className="text-xs text-white/30 font-mono whitespace-nowrap self-start border border-white/8 rounded-full px-3.5 py-1.5">
-                        {p.period}
-                      </span>
+                      <div className="flex items-center gap-2 self-start flex-shrink-0">
+                        <span className="text-xs text-white/30 font-mono whitespace-nowrap border border-white/8 rounded-full px-3.5 py-1.5">
+                          {p.period}
+                        </span>
+                        {p.github && (
+                          <a
+                            href={p.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={(e) => e.stopPropagation()}
+                            className="flex items-center gap-1.5 text-xs text-white/40 border border-white/10 rounded-full px-3.5 py-1.5 hover:border-white/30 hover:text-white/80 transition-all duration-300"
+                          >
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                            Code ↗
+                          </a>
+                        )}
+                      </div>
                     </div>
 
                     <div className="flex flex-wrap gap-2 mb-6">
@@ -538,7 +791,7 @@ export default function Home() {
 
 
       {/* ═══════════════ CERTIFICATIONS ═══════════════ */}
-      <section className="relative border-t border-white/8 px-6 py-28 md:py-36">
+      <section id="certifications" className="relative border-t border-white/8 px-6 py-28 md:py-36">
         <div className="max-w-7xl mx-auto">
           <Reveal>
             <div className="mb-16">
@@ -582,30 +835,81 @@ export default function Home() {
 
 
       {/* ═══════════════ PUBLICATIONS ═══════════════ */}
-      <section className="relative border-t border-white/8 px-6 py-24 md:py-28">
+      <section id="publications" className="relative border-t border-white/8 px-6 py-24 md:py-28">
         <div className="max-w-7xl mx-auto">
           <Reveal>
-            <div className="mb-12">
-              <Label>Publications</Label>
-              <h2 className="mt-5 text-3xl md:text-5xl font-bold tracking-[-0.05em] leading-[0.92]">
-                Research<br />
-                <span className="text-white/28">contributions.</span>
-              </h2>
+            <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+              <div>
+                <Label>Publications</Label>
+                <h2 className="mt-5 text-3xl md:text-5xl font-bold tracking-[-0.05em] leading-[0.92]">
+                  Research<br />
+                  <span className="text-white/28">contributions.</span>
+                </h2>
+              </div>
+              <a
+                href="https://ieeexplore.ieee.org/author/654951346485441"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 self-start md:self-end text-xs text-indigo-400 border border-indigo-400/25 bg-indigo-500/[0.04] rounded-full px-4 py-2 hover:bg-indigo-500/[0.1] hover:border-indigo-400/50 transition-all duration-300 font-mono"
+              >
+                IEEE Author Profile ↗
+              </a>
             </div>
           </Reveal>
 
-          <div className="space-y-4">
+          <div className="space-y-3">
             {PUBLICATIONS.map((pub, i) => (
-              <Reveal key={i} delay={i * 100}>
-                <div className="flex gap-6 border border-white/8 rounded-2xl p-6 md:p-8 hover:border-white/18 hover:bg-white/[0.02] transition-all duration-500">
-                  <span className="text-3xl font-bold text-white/8 font-mono select-none flex-shrink-0 mt-0.5">
-                    0{i + 1}
+              <Reveal key={i} delay={i * 70}>
+                <a
+                  href={pub.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex gap-5 border border-white/8 rounded-2xl p-6 md:p-7 hover:border-white/18 hover:bg-white/[0.025] transition-all duration-400 block"
+                >
+                  {/* Number */}
+                  <span className="text-2xl font-bold text-white/[0.08] font-mono select-none flex-shrink-0 mt-1 w-8 leading-none">
+                    {String(i + 1).padStart(2, "0")}
                   </span>
-                  <div>
-                    <p className="text-sm md:text-base font-semibold text-white/80 leading-relaxed">{pub.title}</p>
-                    <p className="mt-2 text-xs text-white/35 font-mono">{pub.venue}</p>
+
+                  <div className="flex-1 min-w-0">
+                    {/* Top row: title + year + link */}
+                    <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2 md:gap-4">
+                      <p className="text-sm md:text-[15px] font-semibold text-white/80 leading-[1.55] flex-1 group-hover:text-white/95 transition-colors duration-300">
+                        {pub.title}
+                      </p>
+                      <div className="flex items-center gap-2 flex-shrink-0 self-start mt-0.5">
+                        <span className="text-[10px] text-white/30 border border-white/8 rounded-full px-2.5 py-0.5 font-mono">{pub.year}</span>
+                        <span className="text-[10px] text-indigo-400/70 border border-indigo-400/20 rounded-full px-2.5 py-0.5 font-mono group-hover:text-indigo-400 group-hover:border-indigo-400/40 transition-all duration-300">
+                          IEEE ↗
+                        </span>
+                      </div>
+                    </div>
+
+                    {/* Venue + area row */}
+                    <div className="mt-2.5 flex flex-wrap items-center gap-x-3 gap-y-1.5">
+                      <span className="text-[11px] text-white/35 font-mono font-medium">{pub.venue}</span>
+                      <span className="text-white/15 text-[10px]">·</span>
+                      <span className="text-[10px] text-white/30 font-mono leading-snug">{pub.fullVenue}</span>
+                    </div>
+
+                    {/* Bottom row: area badge + citations + doi */}
+                    <div className="mt-3.5 flex flex-wrap items-center gap-2">
+                      <span className="text-[10px] font-medium px-2.5 py-0.5 rounded-full bg-white/[0.05] border border-white/10 text-white/50">
+                        {pub.area}
+                      </span>
+                      {pub.citations > 0 && (
+                        <span className="text-[10px] text-amber-400/80 border border-amber-400/25 bg-amber-400/[0.04] rounded-full px-2.5 py-0.5 font-mono">
+                          Cited {pub.citations}×
+                        </span>
+                      )}
+                      {pub.doi && (
+                        <span className="text-[10px] text-white/25 font-mono">
+                          DOI: {pub.doi}
+                        </span>
+                      )}
+                    </div>
                   </div>
-                </div>
+                </a>
               </Reveal>
             ))}
           </div>
