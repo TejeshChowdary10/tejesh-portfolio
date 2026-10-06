@@ -447,7 +447,7 @@ export default function Home() {
             </a>
 
             <a
-              href="https://www.linkedin.com/in/TejeshChowdaryGeda"
+              href="https://www.linkedin.com/in/tejesh-chowdary-geda"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2.5 rounded-full border border-white/15 px-7 py-3.5 text-sm text-white/70 hover:bg-white/8 hover:border-white/30 transition-all duration-300"
@@ -943,7 +943,7 @@ export default function Home() {
               </a>
 
               <a
-                href="https://www.linkedin.com/in/TejeshChowdaryGeda"
+                href="https://www.linkedin.com/in/tejesh-chowdary-geda"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2.5 rounded-full border border-white/15 px-8 py-4 text-sm text-white/65 hover:bg-white/8 hover:border-white/30 transition-all duration-300"
