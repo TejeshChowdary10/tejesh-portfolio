@@ -24,11 +24,11 @@ const EXPERIENCE = [
   {
     role: "AWS Cloud Intern",
     company: "F13 Technologies",
-    period: "July 2026 – Present",
-    type: "Full-time Internship",
+    period: "July 2026 – October 2026",
+    type: "Internship (Completed)",
     location: "Remote",
-    current: true,
-    summary: "Building serverless, production-grade cloud architectures and applying AI in real-world environments.",
+    current: false,
+    summary: "Built serverless, production-grade cloud architectures and applied AI in real-world environments.",
     highlights: [
       {
         label: "Employee Document Vault",
